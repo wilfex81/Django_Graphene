@@ -15,6 +15,7 @@ class Deck(DjangoObjectType):
 class Card(DjangoObjectType):
     class Meta:
         model = CardModel
+        #fields = "__all__"
 
 
 class Query(graphene.ObjectType):
